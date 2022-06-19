@@ -1,0 +1,6 @@
+docker {
+    files tasks.jar.outputs
+    copySpec.from('build').into('build')
+    name "artifacts/xm/crypto-api:${project.version}"
+    buildArgs([artifactVersion: project.version])
+}

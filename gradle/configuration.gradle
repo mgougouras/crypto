@@ -1,0 +1,13 @@
+configurations {
+    all {
+        exclude module: "spring-boot-starter-logging"
+
+        resolutionStrategy {
+            eachDependency { DependencyResolveDetails details ->
+                if (details.requested.group.contains("guava")) {
+                    details.useVersion "25.1-jre"
+                }
+            }
+        }
+    }
+}

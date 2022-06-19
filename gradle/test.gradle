@@ -1,0 +1,21 @@
+testSets {
+    integrationTest { dirName = 'integration-test' }
+}
+
+test {
+    reports {
+        junitXml.getRequired().set(true)
+    }
+
+    testlogger {
+        slowThreshold 800
+    }
+}
+
+integrationTest {
+
+    testlogger {
+        slowThreshold 2000
+        showStandardStreams true
+    }
+}
