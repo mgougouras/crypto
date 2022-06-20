@@ -10,7 +10,7 @@ import reactor.core.publisher.Mono;
 public interface CryptoApplicationService {
 
     /**
-     * Retrieves a sorted list of all the cryptos, comparing the normalized range (i.e. (max-min)/min)"
+     * Retrieves a sorted list of all the cryptos, comparing the normalized range (i.e. (max-min)/min)
      *
      * @param dateFrom The date from which the client is interested in.
      * @param dateTo   The date to which the client is interested in.

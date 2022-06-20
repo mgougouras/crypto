@@ -45,7 +45,7 @@ public class CryptoControllerIntegrationTest {
     }
 
     @Test
-    public void test_getEngagementMetrics() {
+    public void test_getNormalizedRanges() {
 
         wtc.get().uri(uriBuilder -> uriBuilder
                         .path("/cryptos/normalizedRange")

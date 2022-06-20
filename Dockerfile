@@ -14,7 +14,6 @@ ARG artifactVersion
 
 COPY ./build/libs/crypto-${artifactVersion}.jar /applications/service.jar
 COPY ./build/resources/main/bootstrap.yml /applications
-COPY ./build/resources/main/log4j2.json /applications/log4j2.json
 COPY ./build/resources/main/run-java.sh /applications
 
 RUN chmod 755 /applications/run-java.sh

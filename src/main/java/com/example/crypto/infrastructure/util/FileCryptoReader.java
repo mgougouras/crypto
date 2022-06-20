@@ -4,9 +4,6 @@ import com.example.crypto.infrastructure.exception.FileNotFoundException;
 import com.example.crypto.infrastructure.persistence.CryptoPriceDocument;
 import com.opencsv.CSVParser;
 import com.opencsv.CSVReader;
-import com.opencsv.CSVReaderBuilder;
-import com.sun.tools.javac.Main;
-import java.io.FileReader;
 import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.sql.Timestamp;
@@ -14,8 +11,6 @@ import java.util.List;
 import java.util.stream.Collectors;
 
 public class FileCryptoReader {
-
-    private final static String classPath = "src/main/resources/";
 
     /**
      * Retrieves the crypto values from the given csv file.
